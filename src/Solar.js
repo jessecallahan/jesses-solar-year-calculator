@@ -28,15 +28,15 @@ export class User {
   lifeExpectancy() {
     let expectancy;
     if (this.health === "very healthy") {
-      expectancy = Math.abs(this.age - 100);
+      expectancy = this.age - 100;
     } else if (this.health === "healthy") {
-      expectancy = Math.abs(this.age - 95);
+      expectancy = this.age - 95;
     } else if (this.health === "not healthy") {
-      expectancy = Math.abs(this.age - 90);
+      expectancy = this.age - 90;
     } else {
       "error"
     }
-    return this.lifeExpectancyOnEarth = expectancy;
+    return this.lifeExpectancyOnEarth = Math.abs(expectancy);
   }
 
   lifeExpectancyOnAllFourPlanets() {

@@ -33,7 +33,7 @@ describe('User', () => {
 
   test("should return life expectancy on all 4 planets", () => {
     testUser.lifeExpectancy();
-    expect(testUser.lifeExpectancyOnAllFourPlanets()).toEqual([20, 8, 2, 0])
+    expect(testUser.lifeExpectancyOnAllFourPlanets()).toEqual([354, 137, 45, 7])
   });
 
 
