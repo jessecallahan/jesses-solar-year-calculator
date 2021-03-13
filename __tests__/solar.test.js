@@ -59,7 +59,7 @@ describe('User', () => {
 
   test("this is a UI test to show knowlege of templete literals", () => {
     let newTestUser = new User(33, "very healthy")
-    expect(newTestUser.lifeExpectancyUITest()).toEqual("The life expectancy for someone 33 years of age and very healthy is 67 on earth, 279 on Mercury, 108 on Venus, 35 on Mars, 5 on Jupiter")
+    expect(newTestUser.lifeExpectancyUITest()).toEqual("The life expectancy for someone 33 years of age and very healthy is 67 on Earth, 279 on Mercury, 108 on Venus, 35 on Mars, 5 on Jupiter")
   });
 
 });

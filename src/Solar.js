@@ -1,9 +1,9 @@
 export class User {
-  constructor(age, health, lifeExpectancyOnEarth, lifeExpectancyList) {
+  constructor(age, health, lifeExpectancyOnEarth) {
     this.age = age;
     this.health = health;
     this.lifeExpectancyOnEarth = lifeExpectancyOnEarth;
-    this.lifeExpectancyList = lifeExpectancyList;
+    this.lifeExpectancyList = [];
   }
 
   mercuryYears() {
@@ -41,19 +41,20 @@ export class User {
   }
 
   lifeExpectancyOnAllFourPlanets() {
-    let x = this.lifeExpectancyOnEarth
+    let x = this.lifeExpectancyOnEarth;
+    this.lifeExpectancyList = [];
     let MercLifeExp = Math.floor(x * 100 / 24)
     let VenusLifeExp = Math.floor(x * 100 / 62)
     let MarsLifeExp = Math.floor(x * 1 / 1.88)
     let JupiterLifeExp = Math.floor(x * 1 / 11.86)
-    this.lifeExpectancyList = [MercLifeExp, VenusLifeExp, MarsLifeExp, JupiterLifeExp]
-    return [MercLifeExp, VenusLifeExp, MarsLifeExp, JupiterLifeExp]
+    this.lifeExpectancyList.push(MercLifeExp, VenusLifeExp, MarsLifeExp, JupiterLifeExp);
+    return this.lifeExpectancyList
   }
 
   lifeExpectancyUITest() {
     this.lifeExpectancy();
     this.lifeExpectancyOnAllFourPlanets();
-    return `The life expectancy for someone ${this.age} years of age and ${this.health} is ${this.lifeExpectancyOnEarth} on earth, ${this.lifeExpectancyList[0]} on Mercury, ${this.lifeExpectancyList[1]} on Venus, ${this.lifeExpectancyList[2]} on Mars, ${this.lifeExpectancyList[3]} on Jupiter`
+    return `The life expectancy for someone ${this.age} years of age and ${this.health} is ${this.lifeExpectancyOnEarth} on Earth, ${this.lifeExpectancyList[0]} on Mercury, ${this.lifeExpectancyList[1]} on Venus, ${this.lifeExpectancyList[2]} on Mars, ${this.lifeExpectancyList[3]} on Jupiter`
 
   }
 }
