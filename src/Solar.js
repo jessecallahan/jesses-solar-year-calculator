@@ -36,8 +36,16 @@ export class User {
     } else {
       "error"
     }
-    this.lifeExpectancyOnEarth = expectancy;
-    return `The life expectancy of someone who is ${this.health} and is ${this.age} years old on Earth is ${this.lifeExpectancyOnEarth}`
+    return this.lifeExpectancyOnEarth = expectancy;
+  }
+
+  lifeExpectancyOnAllFourPlanets() {
+    let x = this.lifeExpectancyOnEarth
+    let MercLifeExp = Math.floor(x * 100 / 24)
+    let VenusLifeExp = Math.floor(x * 100 / 62)
+    let MarsLifeExp = Math.floor(x * 1 / 1.88)
+    let JupiterLifeExp = Math.floor(x * 1 / 11.86)
+    return [MercLifeExp, VenusLifeExp, MarsLifeExp, JupiterLifeExp]
   }
 
 
