@@ -20,6 +20,11 @@ export class User {
     return Math.floor(age);
   }
 
+  jupiterYears() {
+    let age = this.age * 1 / 11.86;
+    return Math.floor(age);
+  }
+
 
 
 
