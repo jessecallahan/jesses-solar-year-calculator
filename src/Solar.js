@@ -15,6 +15,12 @@ export class User {
     return Math.floor(age);
   }
 
+  marsYears() {
+    let age = this.age * 1 / 1.88;
+    return Math.floor(age);
+  }
+
+
 
 
 
