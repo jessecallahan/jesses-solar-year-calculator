@@ -1,4 +1,4 @@
-# Jesses Solar Calculator
+# Jesse's Solar Calculator
 https://github.com/jessecallahan/jesses-solar-year-calculator
 
 Created 12.17.18</br>
@@ -31,6 +31,7 @@ Solar Year Calculator calculates what age the user is on Mars, Venus, Jupiter, a
 | 33  |  "very healthy" | 67 expected years to live on Earth  |
 
 health barometer | life expectancy
+|---|---|
 | "not healthy"  |  90 |
 | "healthy"  |  95 |
 | "very healthy"  |  100 |
