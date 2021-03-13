@@ -25,6 +25,21 @@ export class User {
     return Math.floor(age);
   }
 
+  lifeExpectancy() {
+    let expectancy;
+    if (this.health === "very healthy") {
+      expectancy = Math.abs(this.age - 100);
+    } else if (this.health === "healthy") {
+      expectancy = Math.abs(this.age - 95);
+    } else if (this.health === "not healthy") {
+      expectancy = Math.abs(this.age - 90);
+    } else {
+      "error"
+    }
+    this.lifeExpectancyOnEarth = expectancy;
+    return `The life expectancy of someone who is ${this.health} and is ${this.age} years old on Earth is ${this.lifeExpectancyOnEarth}`
+  }
+
 
 
 

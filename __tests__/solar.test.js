@@ -27,6 +27,10 @@ describe('User', () => {
     expect(testUser.jupiterYears()).toEqual(0)
   });
 
+  test("should return life expecatancy on Earth", () => {
+    expect(testUser.lifeExpectancy()).toEqual("The life expectancy of someone who is healthy and is 10 years old on Earth is 85")
+  });
+
 
 
 
