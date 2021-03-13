@@ -27,7 +27,7 @@ Solar Year Calculator calculates what age the user is on Mars, Venus, Jupiter, a
 | 10  |  "healthy" | 85 expected years to live on Earth  |
 | 10  |  "healthy" | [345 Exp years to live on Mercury, 137 Exp years to live on Venus, 45 Exp years to live on Mars, 7 Exp years to live on Jupitar]| lifeExpectancyOnAllFourPlanets() | 
 | 100 |  "healthy" | 5 years over life expectancy on earth | lifeExpectancy() |
-| 100  |  "healhy"| [20 years over life expectancy on Mercury, 8 years over life expectancy on Venus, 2 years over life expectancy on Mars, 0 years over life expectancy on Jupiter ]  | lifeExpectancyOnAllFourPlanets() | 
+| 100  |  "healthy"| [20 years over life expectancy on Mercury, 8 years over life expectancy on Venus, 2 years over life expectancy on Mars, 0 years over life expectancy on Jupiter ]  | lifeExpectancyOnAllFourPlanets() | 
 | 33  |  "very healthy" | 67 expected years to live on Earth  | lifeExpectancy() |
 | 33  |  "very healthy" | "The life expectancy for someone 33 years of age and very healthy is 67 on Earth, 279 on Mercury, 108 on Venus, 35 on Mars, 5 on Jupiter"  | lifeExpectancyUITest() |
 
