@@ -10,6 +10,10 @@ export class User {
     return Math.floor(age);
   }
 
+  venusYears() {
+    let age = this.age * 100 / 62;
+    return Math.floor(age);
+  }
 
 
 
