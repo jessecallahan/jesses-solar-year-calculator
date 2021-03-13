@@ -50,20 +50,12 @@ export class User {
     return [MercLifeExp, VenusLifeExp, MarsLifeExp, JupiterLifeExp]
   }
 
-  lifeExpectancyUI() {
+  lifeExpectancyUITest() {
     this.lifeExpectancy();
     this.lifeExpectancyOnAllFourPlanets();
     return `The life expectancy for someone ${this.age} years of age and ${this.health} is ${this.lifeExpectancyOnEarth} on earth, ${this.lifeExpectancyList[0]} on Mercury, ${this.lifeExpectancyList[1]} on Venus, ${this.lifeExpectancyList[2]} on Mars, ${this.lifeExpectancyList[3]} on Jupiter`
 
   }
-
-
-
-
-
-
-
-
 }
 
 
