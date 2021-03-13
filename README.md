@@ -12,7 +12,7 @@ Solar Year Calculator calculates what age the user is on Mars, Venus, Jupiter, a
 
 1. Clone this [repository](https://github.com/jessecallahan/jesses-solar-year-calculator)
 2. Navigate to this directory
-3. Run 'npm run tests' using Jest in your cpu's terminal
+3. Run 'npm install && npm run tests' using Jest in your cpu's terminal
 4. Enjoy!
 
 ## Specs
