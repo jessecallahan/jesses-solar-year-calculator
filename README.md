@@ -1,5 +1,5 @@
-# Solar 
-https://github.com/jessecallahan/solar-year-calculator
+# Jesses Solar Calculator
+https://github.com/jessecallahan/jesses-solar-year-calculator
 
 Created 12.17.18</br>
 By _**Jesse Callahan**_</br>
