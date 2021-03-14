@@ -36,17 +36,11 @@ describe('User', () => {
     expect(testUser.lifeExpectancyOnAllFourPlanets()).toEqual([354, 137, 45, 7])
   });
 
-  test("should return life expectancy absolute value, so value you've lived over the expectancy based on your age and health", () => {
+  test("should return life expectancy absolute value, so the value the user has lived over the expectancy based on their age and health", () => {
     let newTestUser = new User(100, "healthy")
     expect(newTestUser.lifeExpectancy()).toEqual(5)
   });
-
-  test("should return life expectancy absolute value, so value you've lived over the expectancy based on your age and health", () => {
-    let newTestUser = new User(100, "healthy")
-    expect(newTestUser.lifeExpectancy()).toEqual(5)
-  });
-
-  test("should return life expectancy absolute value, so value you've lived over the expectancy based on your age and health for all four planets", () => {
+  test("should return life expectancy absolute value, so the value the user has lived over the expectancy based on thier age and health for all four planets", () => {
     let newTestUser = new User(100, "healthy")
     newTestUser.lifeExpectancy();
     expect(newTestUser.lifeExpectancyOnAllFourPlanets()).toEqual([20, 8, 2, 0])
@@ -59,7 +53,7 @@ describe('User', () => {
 
   test("this is a UI test to show knowlege of templete literals", () => {
     let newTestUser = new User(33, "very healthy")
-    expect(newTestUser.lifeExpectancyUITest()).toEqual("The life expectancy for someone 33 years of age and very healthy is 67 on Earth, 279 on Mercury, 108 on Venus, 35 on Mars, 5 on Jupiter")
+    expect(newTestUser.lifeExpectancyUITest()).toEqual("The life expectancy for someone 33 years of age and very healthy is 67 more years on Earth, 279 on Mercury, 108 on Venus, 35 on Mars, 5 on Jupiter")
   });
 
 });
