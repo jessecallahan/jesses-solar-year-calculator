@@ -35,7 +35,7 @@ export class User {
     } else if (this.health === "not healthy") {
       expectancy = this.age - 90;
     } else {
-      "error"
+      return "error";
     }
     return this.lifeExpectancyOnEarth = Math.abs(expectancy);
   }
@@ -43,21 +43,20 @@ export class User {
   lifeExpectancyOnAllFourPlanets() {
     let x = this.lifeExpectancyOnEarth;
     this.lifeExpectancyList = [];
-    let MercLifeExp = Math.floor(x * 100 / 24)
-    let VenusLifeExp = Math.floor(x * 100 / 62)
-    let MarsLifeExp = Math.floor(x * 1 / 1.88)
-    let JupiterLifeExp = Math.floor(x * 1 / 11.86)
+    let MercLifeExp = Math.floor(x * 100 / 24);
+    let VenusLifeExp = Math.floor(x * 100 / 62);
+    let MarsLifeExp = Math.floor(x * 1 / 1.88);
+    let JupiterLifeExp = Math.floor(x * 1 / 11.86);
     this.lifeExpectancyList.push(MercLifeExp, VenusLifeExp, MarsLifeExp, JupiterLifeExp);
-    return this.lifeExpectancyList
+    return this.lifeExpectancyList;
   }
 
   lifeExpectancyUITest() {
     this.lifeExpectancy();
     this.lifeExpectancyOnAllFourPlanets();
-    return `The life expectancy for someone ${this.age} years of age and ${this.health} is ${this.lifeExpectancyOnEarth} more years on Earth, ${this.lifeExpectancyList[0]} on Mercury, ${this.lifeExpectancyList[1]} on Venus, ${this.lifeExpectancyList[2]} on Mars, ${this.lifeExpectancyList[3]} on Jupiter`
+    return `The life expectancy for someone ${this.age} years of age and ${this.health} is ${this.lifeExpectancyOnEarth} more years on Earth, ${this.lifeExpectancyList[0]} on Mercury, ${this.lifeExpectancyList[1]} on Venus, ${this.lifeExpectancyList[2]} on Mars, ${this.lifeExpectancyList[3]} on Jupiter`;
 
   }
 }
-
 
 

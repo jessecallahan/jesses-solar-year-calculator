@@ -37,9 +37,20 @@ describe('User', () => {
   });
 
   test("should return life expectancy absolute value, so the value the user has lived over the expectancy based on their age and health", () => {
+    let newTestUser = new User(100, "not healthy")
+    expect(newTestUser.lifeExpectancy()).toEqual(10)
+  });
+
+  test("should throw an error based on wrong health info", () => {
+    let newTestUser = new User(100, "other thing")
+    expect(newTestUser.lifeExpectancy()).toEqual("error")
+  });
+
+  test("should return life expectancy absolute value, so the value the user has lived over the expectancy based on their age and health", () => {
     let newTestUser = new User(100, "healthy")
     expect(newTestUser.lifeExpectancy()).toEqual(5)
   });
+
   test("should return life expectancy absolute value, so the value the user has lived over the expectancy based on thier age and health for all four planets", () => {
     let newTestUser = new User(100, "healthy")
     newTestUser.lifeExpectancy();
